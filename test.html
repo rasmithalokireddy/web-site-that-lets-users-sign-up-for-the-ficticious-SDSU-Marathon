@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="mycssfile.css">
+	<script src="http://jadran.sdsu.edu/jquery/jquery.js"></script>
+    <script src="test.js"></script>
+</head>
+<!--Code by Amruta-->
+<!--Code by jadrn038-->
+<body id = nextpage>
+    <h1>Registration</h1>
+	<fieldset>
+        <legend>Personal Information</legend>
+        <form name="personal_info" 
+              action="process_request.php"
+              method="post"
+              enctype="multipart/form-data">
+        <ul>
+		    
+            <li><label for="firstname">First Name :<span>*</span></label>
+                <input type="text" name="firstname"  id="firstname" size="25" autofocus /></li>                     
+            <li><label for="lastname">Last Name :<span>*</span></label>
+                <input type="text" name="lastname"  id="lastname" size="25" /></li> 
+            <li><label for="mname">Middle Name :</label>
+                <input type="text" name="mname"  id="mname" size="25" /></li> 
+            <li><label>Gender :<span>*</span></label>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="other">other</label>
+                <input type="radio" name="gender" value="other" id="other"></li>
+            <li><label>Experience Level :<span>*</span></label>
+                <label for="expert">Expert</label>
+                <input type="radio" name="experiencelevel" value="expert" id="expert">
+                <label for="experienced">Experienced</label>
+                <input type="radio" name="experiencelevel" value="experienced" id="experienced">
+                <label for="novice">Novice</label>
+                <input type="radio" name="experiencelevel" value="novice" id="novice"></li>
+            <li><label>Category :<span>*</span></label>
+                <label for="expert">Teen</label>
+                <input type="radio" name="category" value="teen" id="teen">
+                <label for="expert">Adult</label>
+                <input type="radio" name="category" value="adult" id="adult">
+                <label for="expert">Senior</label>
+                <input type="radio" name="category" value="senior" id="senior"></li>
+            <li><label for="address1">Address Line 1 :<span>*</span></label>
+                <input type="text" name="address1"  id="address1" size="55" /></li>  
+			<li><label for="address2">Address Line 2 :</label>
+                <input type="text" name="address2"  id="address2" size="55" /></li>
+            <li><label for="phone">Phone :<span>*</span></label>
+                <!-- (<input type="text" name="area_phone" id="phone" size="5" maxlength="3" />)  &nbsp;&nbsp;
+                 <input type="text" name="prefix_phone" size="5" maxlength="3" /> &nbsp;-&nbsp; -->
+                <input type="text" name="phone" id="phone" size="15" maxlength="10" /></li>
+            <li><label for="email">Email :<span>*</span></label>
+                <input type="text" name="email" id="email" size="32" /></li>  
+            <li><label for="city">City :<span>*</span></label>
+                <input type="text" name="city"  id="city" size="25" /> 
+                <label for="state">State :<span>*</span></label>
+                <input type="text" name="state" id="state" size="7" />                     
+                <label for="zip">Zip :</label>
+                <input type="text" name="zip" id="zip" size="10" maxlength="5" /></li>      
+            <li><label for="dob"> Date of birth :<span>*</span></label>
+			    <!-- <input type="text" name="month" size="5" maxlength="2" placeholder="mm" id="DOB" /> &nbsp;&nbsp;
+				<input type="text" name="day" size="5" maxlength="2" placeholder="dd"/> &nbsp;&nbsp; -->
+				<input type="text" name="dob" id="dob" size="15" maxlength="10" placeholder="MM/DD/YYYY"/></li>
+			<li><label for="MedicalConditions">Medical Conditions :</label>
+			    <textarea name="MedicalConditions" cols="40" rows="4" id="medical"> </textarea></li>
+		    
+			
+            <li> <label for="user_pic">Upload your picture :<span>*</span></label>
+                 <input type="file" name="user_pic" id ="user_pic" accept="image/*"/>
+        </ul>
+        <div id=button_panel>  
+            <input type="reset" value="Clear Data" class="button" />
+            <input type="submit" value="Submit Data" id="submit_button" class="button" /> 
+        </div>       
+        </form>
+		<div id="message_line">&nbsp;</div>
+        </fieldset> 
+</body>
+</html>

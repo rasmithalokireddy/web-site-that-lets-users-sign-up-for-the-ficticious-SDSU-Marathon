@@ -1,0 +1,67 @@
+body { 
+    background: rgba(0,0,0,0.8) ;
+    background-image: url("loginform.jpg");
+    background-size: cover;
+	color:white;
+	
+
+    }
+    h1, h2 { text-align: center; }
+
+#message_line { color: red; }
+
+input[type=password] {
+   
+    padding: 5px 5px;
+    margin-top: 2px;
+    box-sizing: border-box;
+}
+
+div {text-align: center;}
+
+.buttons {text-align: center;}
+input[type=submit], input[type=reset] {
+	 margin-top: 0px ;
+     padding: 5px 5px;
+
+ }
+   .fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    background-color:rgba(10,10,10,.8);
+    
+}
+p{
+    margin-top: 75px;
+
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+h1{
+    
+    margin-top: 90px;
+}
+
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  color: red;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}

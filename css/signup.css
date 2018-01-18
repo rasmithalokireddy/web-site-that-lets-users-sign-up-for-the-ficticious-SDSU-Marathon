@@ -1,0 +1,110 @@
+/*Lokireddy, Rasmitha
+Jadrn032
+project #3 
+fall 2017 */ 
+body { 
+    background-color: #EEF; 
+    }
+h1, h3 { 
+    text-align: center;
+    } 
+    
+h3 { color: red; }   
+
+fieldset {
+    width: 1100px;
+    margin: 0 auto 0 auto;
+    }
+    
+.buttons {
+    text-align: center;
+    padding: 25px 0 5px 0;
+    }   
+    td .lname{
+        float: right;
+    }
+    .main{
+        z-index: 400;
+        position: absolute;
+        background: rgba(0,0,0,0.8);
+        top: 50px;
+        bottom: 0;
+        right: 0;
+        left:0;
+        color: white;
+    }
+    .fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  color: red;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#message_line{
+  color: red;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+input[type="text"]::-webkit-input-placeholder {
+color: red !important;
+font-weight: 700;
+}
+ 
+input[type="text"]:-moz-placeholder { 
+color: red !important; 
+font-weight: 700; 
+}
+ 
+input[type="text"]::-moz-placeholder {
+color: red !important;  
+font-weight: 700;
+}
+ 
+input[type="text"]:-ms-input-placeholder {  
+color: red !important;  
+font-weight: 700;
+}
